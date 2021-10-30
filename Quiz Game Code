@@ -1,0 +1,41 @@
+score = 0
+print("Welcome to my game.")
+x = input("Do you want to play? ").lower()
+if x == "yes":
+    print("Ok, let's get started.")
+else:
+    quit()
+
+answer = input("Question 1. Which Taylor Swift song is my favorite? ").lower()
+if answer == "wildest dreams":
+    print("Correct! I love that song!")
+    score += 1
+else:
+    print("Wrong! While I do probably love that song, it isn't my FAVORITE.")
+
+answer = input("Question 2. Who is my favorite rapper? ").lower()
+if answer == "drake":
+    print("Correct! I can get down to some Drake songs!")
+    score += 1
+else:
+    print("Wrong! You should know Drake is my guy!")
+
+x = input("But I digress. Are you ready for question number 3? ").lower()
+if x != "yes":
+    quit()
+
+answer = input("Question 3. From which store do I get my favorite protein bars from? ").lower()
+if answer == "costco":
+    print("Correct! Kirkland Signature has the best bars on the market!")
+    score += 1
+else:
+    print("Wrong! Maybe you should take a look at Costco's Kirkland Signature protein bars, they slap!")
+
+answer = input("Last question. Which fast food restaurants is my favorite? ").lower()
+if answer == "taco bell":
+    print("Correct! Taco bell's Nacho Supreme is the ultimate fast food slapper!")
+    score += 1
+else:
+    print("Wrong! You said something other than taco bell, which is a mistake. The only other restaurants on par with Taco Bell is Chic-fil-a")
+
+print("Congratulations. You got " + str(score) + " right out of 4.")
